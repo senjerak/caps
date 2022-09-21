@@ -11,28 +11,24 @@ div.logo {
     width: 100px;
     height: 100px;
     display: block;
-    position: relative;
 }
 
 .dirtscene {
     width: 100px;
     height: 100px;
     display: block;
-    position: relative;
 }
 
 .grassscene {
     width: 100px;
     height: 100px;
     display: block;
-    position: relative;
 }
 
 .starsscene {
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     display: block;
-    position: relative;
 }
 
 html {
@@ -43,7 +39,7 @@ html {
 body {
     background-size: cover;
     width: 100vw;
-    height: 100%;
+    height: 100vw;
     background-repeat: no-repeat;
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 107, 1) 50%, rgba(77, 84, 255, 1) 100%);
 }
