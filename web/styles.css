@@ -7,36 +7,32 @@
     padding: 0;
 }
 
-.logo {
+div.logo {
     width: 100px;
     height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
 .dirtscene {
     width: 100px;
     height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
 .grassscene {
     width: 100px;
     height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
 .starsscene {
     width: 100px;
     height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
 }
 
 html {
