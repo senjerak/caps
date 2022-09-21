@@ -7,9 +7,28 @@
     padding: 0;
 }
 
-.stars{
+.logo {
     width: 100px;
     height: 100px;
+    background-position: inline;
+}
+
+.dirtscene{
+    width: 100px;
+    height: 100px;
+    background-position: inline;
+}
+
+.grassscene{
+    width: 100px;
+    height: 100px;
+    background-position: inline;
+}
+
+.starsscene {
+    width: 100px;
+    height: 100px;
+    background-position: inline;
 }
 
 html {
