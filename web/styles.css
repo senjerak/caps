@@ -25,6 +25,10 @@ div.logo {
     display: block;
 }
 
+#stars{
+    width: 50vw;
+}
+
 .starsscene {
     width: 10px;
     height: 10px;
