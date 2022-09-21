@@ -12,6 +12,11 @@ div.logo {
     height: 100px;
     display: block;
 }
+.capslogo{
+    position: center;
+    padding-left: 50%;
+    padding-right: 50%;
+}
 
 .dirtscene {
     width: 100px;
