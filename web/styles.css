@@ -12,7 +12,8 @@ div.logo {
     height: 100px;
     display: block;
 }
-.capslogo{
+
+.capslogo {
     display: center;
     padding-left: 50%;
     padding-right: 50%;
@@ -30,7 +31,7 @@ div.logo {
     display: block;
 }
 
-#stars{
+#stars {
     width: 50vw;
 }
 
