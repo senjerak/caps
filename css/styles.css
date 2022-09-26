@@ -35,7 +35,7 @@ div.logo {
 .dirt-scene {
     height: 256px;
     width: 100%;
-    background-image: url('/images/dirtblock.png');
+    background-image: url('./images/dirtblock.png');
     background-repeat: repeat-x;
     background-position: top center;
     background-size: contain;
@@ -44,14 +44,14 @@ div.logo {
 .grass-scene {
     height: 256px;
     width: 100%;
-    background-image: url('/images/grassblock.png');
+    background-image: url('./images/grassblock.png');
     background-repeat: repeat-x;
 }
 
 #stars{
    height: 50vh;
    width: 100%;
-   background-image: url('/images/starsblock.png');
+   background-image: url('./images/starsblock.png');
    background-size: 75%;
    background-repeat: repeat;
    background-position: top;
