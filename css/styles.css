@@ -1,4 +1,3 @@
-
 html {
     width: 100%;
     height: 100%;
@@ -13,7 +12,8 @@ body {
     background-repeat: no-repeat;
 }
 
-a, button{
+a,
+button {
     cursor: url('../images/curser2.png'), auto;
 }
 
@@ -37,7 +37,7 @@ div.logo {
     display: block;
 }
 
-#capslogo{
+#capslogo {
     margin: 0 auto;
     display: block;
 }
@@ -58,13 +58,13 @@ div.logo {
     background-repeat: repeat-x;
 }
 
-#stars{
-   height: 50vh;
-   width: 100%;
-   background-image: url('../images/starsblock.png');
-   background-size: 75%;
-   background-repeat: repeat;
-   background-position: top;
+#stars {
+    height: 50vh;
+    width: 100%;
+    background-image: url('../images/starsblock.png');
+    background-size: 75%;
+    background-repeat: repeat;
+    background-position: top;
 
 }
 
@@ -99,4 +99,19 @@ div.logo {
     background-color: rgba(2, 0, 36, 1);
     opacity: 70;
     font-style: italic;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(30, 26, 62);
+    border-radius: 10px;
+}
+::webkit-scrollbar-thumb{
+    background:rgb(30, 26, 62)
+}
+::-webkit-scrollbar-thumb:hover{
+        background: #ffffff;
 }
