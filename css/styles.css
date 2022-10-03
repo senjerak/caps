@@ -60,7 +60,7 @@ div.logo {
 .grass-scene {
     height: 300px;
     width: 100%;
-    background-image: url('../images/grassblock.png');
+    background-image: url('../images/grassblock.gif');
     background-repeat: repeat-x;
     background-position: bottom;
 }
