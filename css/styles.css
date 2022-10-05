@@ -126,5 +126,23 @@ div.logo {
 }
 
 audio::-webkit-media-controls-panel{
-    background-color:rgba(77, 84, 255, 1);
+    background-color:rgb(182, 184, 255);
 }
+
+audio::-webkit-media-controls-play-button {
+    background-color: rgb(145, 151, 255);
+    border-radius: 50%;
+  }
+
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+  }
+
+  #wavcontrol{
+    margin: auto;
+    text-align: center;
+  }
