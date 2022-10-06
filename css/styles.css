@@ -113,6 +113,7 @@ div.logo {
     color: white;
     text-align: center;
     margin: 0 auto;
+    word-wrap: break-inside;
 }
 
 .irlimages{
@@ -123,6 +124,45 @@ div.logo {
     display: inline;
     width: 200px;
     height: 200px;
+}
+
+.bebies{
+    display: inline-block;
+    display: inline;
+    margin: auto;
+}
+
+.mushibob{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+
+#mush1{
+    background-image: url(../images/mush1.png)
+}
+
+#mush1:hover{
+    background-image: url(../images/mush1.gif)
+}
+
+
+#mush2{
+    background-image: url(../images/mush2.png)
+}
+
+#mush2:hover{
+    background-image: url(../images/mush2.gif)
+}
+
+
+#mush3{
+    background-image: url(../images/mush3.png)
+}
+
+#mush3:hover{
+    background-image: url(../images/mush3.gif)
 }
 
 audio::-webkit-media-controls-panel{
