@@ -32,7 +32,7 @@ main {
     font-size: 1rem;
     font-family: firstschool;
     color: antiquewhite;
-    background: linear-gradient(to bottom, rgba(77, 84, 255, 1),transparent);
+    background: linear-gradient(to bottom, rgba(77, 84, 255, 1), transparent);
     padding: 0.5rem 1rem;
 }
 
@@ -106,83 +106,98 @@ div.logo {
     opacity: 70;
     font-style: italic;
 }
+
 .text {
     padding: 0;
     font-family: firstschool;
-    font-size:small;
+    font-size: small;
     color: white;
     text-align: center;
     margin: 0 auto;
     word-wrap: break-inside;
 }
 
-.irlimages{
+.text2{
+    background-color: rgb(63, 63, 128);
+    opacity: 40%;
+    font-family: firstschool;
+    font-size: small;
+    color: white;
+    text-align: center;
+    padding: auto;
+}
+
+.aboutmush{
+    text-align: center;
+    padding: auto;
+}
+
+.irlimages {
     text-align: center;
 }
 
-.irlimages img{
+.irlimages img {
     display: inline;
     width: 200px;
     height: 200px;
 }
 
-.bebies{
-    display: inline-block;
+.bebies {
     display: inline;
     margin: auto;
 }
 
-.mushibob{
+.mushibob {
     margin: auto;
     width: 300px;
     height: 300px;
 }
 
 
-#mush1{
+#mush1 {
     background-image: url(../images/mush1.png)
 }
 
-#mush1:hover{
+#mush1:hover {
     background-image: url(../images/mush1.gif)
 }
 
 
-#mush2{
+#mush2 {
     background-image: url(../images/mush2.png)
 }
 
-#mush2:hover{
+#mush2:hover {
     background-image: url(../images/mush2.gif)
 }
 
 
-#mush3{
+#mush3 {
     background-image: url(../images/mush3.png)
 }
 
-#mush3:hover{
+#mush3:hover {
     background-image: url(../images/mush3.gif)
 }
 
-audio::-webkit-media-controls-panel{
-    background-color:rgb(182, 184, 255);
+audio::-webkit-media-controls-panel {
+    background-color: rgb(182, 184, 255);
 }
 
 audio::-webkit-media-controls-play-button {
     background-color: rgb(145, 151, 255);
     border-radius: 50%;
-  }
+}
 
-  audio::-webkit-media-controls-current-time-display {
+audio::-webkit-media-controls-current-time-display {
     color: #fff;
-  }
+}
 
-  audio::-webkit-media-controls-time-remaining-display {
+audio::-webkit-media-controls-time-remaining-display {
     color: #fff;
-  }
+}
 
-  #wavcontrol{
+#wavcontrol {
     margin: auto;
     text-align: center;
-  }
+}
