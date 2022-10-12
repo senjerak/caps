@@ -11,20 +11,29 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <main>
-        <header class="heaber">About
-            <nav>
-                <ul class="nabigation">
-                    <li><a href="./index.html">Begin</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./capslist.html">Caps</a></li>
-                    <li><a href="./index.html">Reset</a></li>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a id="nabigation" class="navbar-brand" href="#"><strong>About</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" id="nabigation">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">𓋼 Begin 𓋼</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">𓋼 About 𓋼</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./capslist.html">𓋼 Caps 𓋼</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">𓋼 Reset 𓋼</a></li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+        </nav>
         <div id="wavcontrol">
             <audio controls autoplay loop>
                 <source src="./media/18-Dark fantasy studio- Oinions.wav" preload="auto" type="audio/mpeg">

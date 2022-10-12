@@ -75,7 +75,7 @@ div.logo {
 
 }
 
-.nabigation {
+#nabigation {
     font-size: x-small;
     text-align: center;
     padding: 0;
@@ -84,17 +84,24 @@ div.logo {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin: auto;
 }
 
-.nabigation li {
+#nabigation li {
     display: inline;
     position: center;
     text-align: center;
 }
 
-.nabigation a {
+#nabigation a {
     font-size: 1.5em;
-    color: rgba(2, 0, 36, 1);
+    color: rgb(191, 191, 191);
+}
+
+#nabigation a:hover{
+    font-size: 1.5em;
+    color: rgb(85, 181, 255);
+}
 }
 
 .fooper {
