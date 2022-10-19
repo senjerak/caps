@@ -123,14 +123,12 @@ div.logo {
     word-wrap: break-inside;
 }
 
-.text2{
-    background-color: rgb(63, 63, 128);
-    opacity: 40%;
-    font-family: firstschool;
-    font-size: small;
-    color: white;
-    text-align: center;
+h2{
+    display: inline-block;
+    margin: auto;
     padding: auto;
+    margin-left: 95px;
+    margin-right: 95px;
 }
 
 main{
