@@ -133,9 +133,8 @@ div.logo {
     padding: auto;
 }
 
-.aboutmush{
-    text-align: center;
-    padding: auto;
+main{
+    overflow: auto;
 }
 
 .irlimages {
@@ -148,12 +147,15 @@ div.logo {
     height: 200px;
 }
 
-.bebies {
-    display: inline;
+.aboutmush{
+    text-align: center;
     margin: auto;
+    padding: auto;
 }
 
 .mushibob {
+    background-repeat: no-repeat;
+    display: inline-block;
     margin: auto;
     width: 300px;
     height: 300px;
