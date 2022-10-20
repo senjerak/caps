@@ -204,6 +204,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 #wavcontrol {
+    display: none;
     margin: auto;
     text-align: center;
 }
@@ -219,12 +220,18 @@ audio::-webkit-media-controls-time-remaining-display {
  * prefixes.
  */
 
+
+nav{
+    position: fixed;
+}
+
+
  #menuToggle
  {
-   display: block;
+   display: inline-block;
    position: relative;
-   top: 50px;
-   left: 0px;
+   top: 20px;
+   left: 20px;
    z-index: 1;
    
    -webkit-user-select: none;
