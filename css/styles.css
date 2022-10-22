@@ -48,6 +48,12 @@ div.logo {
     display: block;
 }
 
+#capslogo:hover{
+    transform: scale(110%);
+    transition: trransform 100ms ease-out;
+
+}
+
 .dirt-scene {
     height: 200px;
     width: 100%;
