@@ -65,7 +65,7 @@ div.logo {
 }
 
 .grass-scene {
-    height: 300px;
+    height: 200px;
     width: 100%;
     background-image: url('../images/grassblock.gif');
     background-repeat: repeat-x;
@@ -143,11 +143,15 @@ main{
 }
 
 .irlimages {
+    margin:auto;
+    padding:auto;
     text-align: center;
+    justify-content:space-between;
 }
 
 .irlimages img {
-   border-radius: 100%;
+    margin: 10px;
+   border-radius: 50px;
     display: inline;
     width: 200px;
     height: 200px;
@@ -244,6 +248,18 @@ audio::-webkit-media-controls-time-remaining-display {
 #exlink a:hover{
     filter: drop-shadow(5px 5px 20px #b7b7ff);
     transition: filter ease-in;
+}
+
+.borderput{
+    background-color: rgb(107, 67, 105);
+    border-style: solid;
+    border-color:#3f2e47;
+    border-radius: 20px 20px 20px;
+    border-width: 10px;
+    width:fit-content;
+    display: block;
+    margin: auto;
+    padding: 20px;
 }
 
 /*
@@ -402,4 +418,16 @@ nav{
  #menuToggle input:checked ~ ul
  {
    transform: none;
+ }
+
+ button{
+    color:#ffffff;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: inline;
+    background-color: rgb(118, 79, 155);
+    border-width: 5px;
+    border-color:rgb(240, 212, 255);
+    border-style:solid;
  }
