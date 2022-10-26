@@ -48,10 +48,10 @@ div.logo {
     display: block;
 }
 
-#capslogo:hover{
+#capslogo:hover {
     filter: drop-shadow(5px 5px 20px #3f2e47);
     transform: scale(110%);
-    transition: trransform 100ms ease-out;
+    transition: transform 100ms ease-out;
 
 }
 
@@ -105,7 +105,7 @@ div.logo {
     color: rgb(191, 191, 191);
 }
 
-#nabigation a:hover{
+#nabigation a:hover {
     font-size: 1.5em;
     color: rgb(85, 181, 255);
 }
@@ -130,7 +130,7 @@ div.logo {
     word-wrap: break-inside;
 }
 
-h2{
+h2 {
     display: inline-block;
     margin: auto;
     padding: auto;
@@ -138,43 +138,43 @@ h2{
     margin-right: 95px;
 }
 
-main{
+main {
     overflow: auto;
 }
 
 .irlimages {
-    margin:auto;
-    padding:auto;
+    margin: auto;
+    padding: auto;
     text-align: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .irlimages img {
     margin: 10px;
-   border-radius: 50px;
+    border-radius: 50px;
     display: inline;
     width: 200px;
     height: 200px;
 }
 
-.irlimages img:hover{
-    transition: transform  100ms ease-out, box-shadow 100ms ease-out;
+.irlimages img:hover {
+    transition: transform 100ms ease-out, box-shadow 100ms ease-out;
     transform: scale(105%);
     box-shadow: 1px 1px 2px black, 0 0 25px rgb(147, 147, 255), 0 0 5px rgb(183, 183, 255);
 }
 
-.refhov img{
+.refhov img {
     margin: auto;
     display: block;
     text-align: center;
 }
 
-.refhov img:hover{
+.refhov img:hover {
     transition: box-shadow 100ms ease-out;
     box-shadow: 1px 1px 2px black, 0 0 25px rgb(147, 147, 255), 0 0 5px rgb(183, 183, 255);
 }
 
-.aboutmush{
+.aboutmush {
     text-align: center;
     margin: auto;
     padding: auto;
@@ -237,26 +237,26 @@ audio::-webkit-media-controls-time-remaining-display {
     text-align: center;
 }
 
-#exlink{
+#exlink {
     padding: 0;
     font-size: small;
     text-align: center;
     margin: 0 auto;
-    word-wrap: break-inside;  
+    word-wrap: break-inside;
 }
 
-#exlink a:hover{
+#exlink a:hover {
     filter: drop-shadow(5px 5px 20px #b7b7ff);
     transition: filter ease-in;
 }
 
-.borderput{
+.borderput {
     background-color: rgb(107, 67, 105);
     border-style: solid;
-    border-color:#3f2e47;
+    border-color: #3f2e47;
     border-radius: 20px 20px 20px;
     border-width: 10px;
-    width:fit-content;
+    width: fit-content;
     display: block;
     margin: auto;
     padding: 20px;
@@ -274,160 +274,155 @@ audio::-webkit-media-controls-time-remaining-display {
  */
 
 
-nav{
+nav {
     position: fixed;
 }
 
 
- #menuToggle
- {
-   display: inline-block;
-   position: relative;
-   top: 20px;
-   left: 20px;
-   z-index: 1;
-   
-   -webkit-user-select: none;
-   user-select: none;
- }
- 
- #menuToggle a
- {
-   text-decoration: none;
-   color: #f0f0ff;
-   
-   transition: color 0.3s ease;
- }
- 
- #menuToggle a:hover
- {
-   color: rgb(129, 226, 255);
- }
- 
- 
- #menuToggle input
- {
-   display: block;
-   width: 40px;
-   height: 32px;
-   position: absolute;
-   top: -7px;
-   left: -5px;
-   
-   cursor: pointer;
-   
-   opacity: 0; /* hide this */
-   z-index: 2; /* and place it over the hamburger */
-   
-   -webkit-touch-callout: none;
- }
- 
- /*
+#menuToggle {
+    display: inline-block;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #f0f0ff;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: rgb(129, 226, 255);
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
   * Just a quick hamburger
   */
- #menuToggle span
- {
-   display: block;
-   width: 33px;
-   height: 4px;
-   margin-bottom: 5px;
-   position: relative;
-   
-   background: #cdcdcd;
-   border-radius: 3px;
-   
-   z-index: 1;
-   
-   transform-origin: 4px 0px;
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-               opacity 0.55s ease;
- }
- 
- #menuToggle span:first-child
- {
-   transform-origin: 0% 0%;
- }
- 
- #menuToggle span:nth-last-child(2)
- {
-   transform-origin: 0% 100%;
- }
- 
- /* 
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
   * Transform all the slices of hamburger
   * into a crossmark.
   */
- #menuToggle input:checked ~ span
- {
-   opacity: 1;
-   transform: rotate(45deg) translate(-2px, -1px);
-   background:#f0f0ff;
- }
- 
- /*
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #f0f0ff;
+}
+
+/*
   * But let's hide the middle one.
   */
- #menuToggle input:checked ~ span:nth-last-child(3)
- {
-   opacity: 0;
-   transform: rotate(0deg) scale(0.2, 0.2);
- }
- 
- /*
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
   * Ohyeah and the last one should go the other direction
   */
- #menuToggle input:checked ~ span:nth-last-child(2)
- {
-   transform: rotate(-45deg) translate(0, -1px);
- }
- 
- /*
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
   * Make this absolute positioned
   * at the top left of the screen
   */
- #menu
- {
-   position: absolute;
-   width: 300px;
-   margin: -100px 0 0 -50px;
-   padding: 50px;
-   padding-top: 125px;
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
 
-   background: #352f43;
-   list-style-type: none;
-   -webkit-font-smoothing: antialiased;
-   /* to stop flickering of text in safari */
-   
-   transform-origin: 0% 0%;
-   transform: translate(-100%, 0);
-   
-   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
- }
- 
- #menu li
- {
-   padding: 10px 0;
-   font-size: 22px;
- }
- 
- /*
+    background: #352f43;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
   * And let's slide it in from the left
   */
- #menuToggle input:checked ~ ul
- {
-   transform: none;
- }
+#menuToggle input:checked~ul {
+    transform: none;
+}
 
- button{
-    color:#ffffff;
+button {
+    color: #ffffff;
     text-align: center;
     margin: auto;
     padding: auto;
     display: inline;
     background-color: rgb(118, 79, 155);
     border-width: 5px;
-    border-color:rgb(240, 212, 255);
-    border-style:solid;
- }
+    border-color: rgb(240, 212, 255);
+    border-style: solid;
+}
+
+button:hover {
+    filter: drop-shadow(5px 5px 20px #3f2e47);
+    transform: scale(110%);
+    transition: transform 100ms ease-out;
+}
