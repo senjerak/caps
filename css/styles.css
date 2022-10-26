@@ -257,9 +257,32 @@ audio::-webkit-media-controls-time-remaining-display {
     border-radius: 20px 20px 20px;
     border-width: 10px;
     width: fit-content;
-    display: block;
+    display: inline-block;
     margin: auto;
     padding: 20px;
+    position: absolute;
+    top: 150px; 
+    left: 0; 
+    right: 0;
+
+}
+
+button {
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: inline;
+    background-color: rgb(118, 79, 155);
+    border-width: 5px;
+    border-color: rgb(240, 212, 255);
+    border-style: solid;
+}
+
+button:hover {
+    filter: drop-shadow(5px 5px 20px #3f2e47);
+    transform: scale(110%);
+    transition: transform 100ms ease-out;
 }
 
 /*
@@ -407,22 +430,4 @@ nav {
   */
 #menuToggle input:checked~ul {
     transform: none;
-}
-
-button {
-    color: #ffffff;
-    text-align: center;
-    margin: auto;
-    padding: auto;
-    display: inline;
-    background-color: rgb(118, 79, 155);
-    border-width: 5px;
-    border-color: rgb(240, 212, 255);
-    border-style: solid;
-}
-
-button:hover {
-    filter: drop-shadow(5px 5px 20px #3f2e47);
-    transform: scale(110%);
-    transition: transform 100ms ease-out;
 }
