@@ -257,14 +257,17 @@ audio::-webkit-media-controls-time-remaining-display {
     border-radius: 20px 20px 20px;
     border-width: 10px;
     width: fit-content;
-    display: inline-block;
+    display: block;
     margin: auto;
     padding: 20px;
+}
+
+#greeter{
+    display: inline-block;
     position: absolute;
     top: 150px; 
     left: 0; 
     right: 0;
-
 }
 
 button {
