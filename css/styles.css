@@ -188,6 +188,12 @@ main {
     height: 300px;
 }
 
+.spoinky{
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
 .spoinkbob {
     background-repeat: no-repeat;
     display: inline-block;
