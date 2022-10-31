@@ -65,7 +65,7 @@ div.logo {
 }
 
 .grass-scene {
-    height: 200px;
+    height: 155px;
     width: 100%;
     background-image: url('../images/grassblock.gif');
     background-repeat: repeat-x;
@@ -188,6 +188,14 @@ main {
     height: 300px;
 }
 
+.spoinkbob{
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: auto;
+    height:60px;
+    width: 300px;
+}
+
 #mush1 {
     background-image: url(../images/mush1.png)
 }
@@ -268,6 +276,11 @@ audio::-webkit-media-controls-time-remaining-display {
     top: 150px; 
     left: 0; 
     right: 0;
+    position: absolute;
+}
+
+#popup{
+    display: none;
 }
 
 button {
