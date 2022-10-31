@@ -188,12 +188,18 @@ main {
     height: 300px;
 }
 
-.spoinkbob{
+.spoinkbob {
     background-repeat: no-repeat;
     display: inline-block;
     margin: auto;
-    height:60px;
+    height: 60px;
     width: 300px;
+    transform: scale(50%);
+}
+
+.spoinkbob:hover {
+    transition: transform ease-in;
+    transform: scale(100%);
 }
 
 #mush1 {
@@ -270,16 +276,16 @@ audio::-webkit-media-controls-time-remaining-display {
     padding: 20px;
 }
 
-#greeter{
+#greeter {
     display: inline-block;
     position: absolute;
-    top: 150px; 
-    left: 0; 
+    top: 150px;
+    left: 0;
     right: 0;
     position: absolute;
 }
 
-#popup{
+#popup {
     display: none;
 }
 
