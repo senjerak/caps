@@ -195,6 +195,7 @@ main {
 }
 
 .spoinkbob {
+    z-index: 0;
     background-repeat: no-repeat;
     display: inline-block;
     margin: auto;
@@ -289,11 +290,13 @@ audio::-webkit-media-controls-time-remaining-display {
     left: 0;
     right: 0;
     position: absolute;
+    z-index:2;
 }
-
+/*
 #popup {
-    display: none;
+  
 }
+*/
 
 button {
     color: #ffffff;
