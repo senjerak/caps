@@ -1,10 +1,8 @@
-const divClose = document.querySelector('.overlay');
-const buttonClose = document.querySelector('#closeup')
+document.addEventListener("DOMContentLoaded", function(event) {
+    const divClose = document.querySelector('.overlay');
+    const buttonClose = document.querySelector('#closeup')
+    
+    buttonClose.addEventListener('click', () => divClose.style.display = 'none');
+    // Code here, DOM is **Definitely** ready for stuff
+});
 
-
-// function myFunction0(){
-
-//     alert('hewwo!')
-// }
-
-buttonClose.addEventListener('click', () => divClose.style.display = 'none');
