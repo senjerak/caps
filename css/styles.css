@@ -292,11 +292,12 @@ audio::-webkit-media-controls-time-remaining-display {
     position: absolute;
     z-index:2;
 }
-/*
-#popup {
-  
+
+.overlay{
+  opacity: 1;
+  transition: opacity 1s ease-out;
 }
-*/
+
 
 button {
     color: #ffffff;
