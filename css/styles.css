@@ -55,6 +55,23 @@ div.logo {
 
 }
 
+#scene {
+    position: relative;
+}
+
+.cap {
+    transition: left ease 2s;
+    transform: translateX(-50%);
+    bottom: 150px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.cap.flip {
+    transform: translateX(-50%) scaleX(-1);
+}
+
 .dirt-scene {
     height: 200px;
     width: 100%;
@@ -188,10 +205,12 @@ main {
     height: 300px;
 }
 
-.spoinky{
+.spoinky {
+    width: 100%;
     text-align: center;
     margin: auto;
     padding: auto;
+    position: absolute;
 }
 
 .spoinkbob {
@@ -290,12 +309,12 @@ audio::-webkit-media-controls-time-remaining-display {
     left: 0;
     right: 0;
     position: absolute;
-    z-index:2;
+    z-index: 2;
 }
 
-.overlay{
-  opacity: 1;
-  transition: opacity 1s ease-out;
+.overlay {
+    opacity: 1;
+    transition: opacity 1s ease-out;
 }
 
 
@@ -316,6 +335,7 @@ button:hover {
     transform: scale(110%);
     transition: transform 100ms ease-out;
 }
+
 
 /*
  * Made by Erik Terwan

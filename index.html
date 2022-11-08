@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script src="js/caps.js"></script>
 </head>
 
@@ -35,6 +36,10 @@
             <audio controls loop>
                 <source src="./media/25-Dark Fantasy Studio-Tiny army.wav" preload="auto" type="audio/mpeg">
             </audio>
+            <audio id="lestart">
+                <source src="./media/Play_Button_01.wav" type="audio/mpeg">
+                </source>
+            </audio>
         </div>
 
         <div id="stars"></div>
@@ -51,22 +56,27 @@
             </div>
         </div>
 
-        <div class="spoinky">
-            <div class="spoinkbob">
-                <a href="./index.html"><img src="./images/spoink.gif"></a>
-            </div>
-            <div class="spoinkbob">
-                <a href="./index.html"><img src="./images/spoink.gif"></a>
-            </div>
-            <div class="spoinkbob">
-                <a href="./index.html"><img src="./images/spoink.gif"></a>
-            </div>
-        </div>
-
         <div id="scene">
+
+            <div class="spoinky">
+                <div class="spoinkbob">
+                    <a href="./index.html"><img src="./images/spoink.gif"></a>
+                </div>
+                <div class="spoinkbob">
+                    <a href="./index.html"><img src="./images/spoink.gif"></a>
+                </div>
+                <div class="spoinkbob">
+                    <a href="./index.html"><img src="./images/spoink.gif"></a>
+                </div>
+            </div>
+
+            <img class="cap" src="./images/walkies.gif">
+
             <div class="grass-scene"></div>
             <div class="dirt-scene"></div>
         </div>
+
+
     </main>
 
     <footer>
