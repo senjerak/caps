@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // menu close
     const ding = document.querySelector('#lestart')
     const BGmusic = document.querySelector('#mainBGmusic')
+    const spoinkMusic = document.querySelector('#bringCap')
+    const spoinkClose = document.querySelectorAll('.spoinkbob button');
     const popUp = document.querySelector('.overlay');
     const buttonClose = document.querySelector('#closeup')
     buttonClose.addEventListener('click', function () {
@@ -16,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ding.play();
         ding.addEventListener('ended', () => {
             BGmusic.play();
+        })
+        spoinkClose.forEach((button) => {
+            button.style.opacity = 1;
         })
     });
 
@@ -51,8 +56,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
         })
     }, 1000))
 
-    const spoinkClose = document.querySelector('.spoinkbob');
+    //spoinky timer
+
+    spoinkClose.forEach((button => {
+        button.addEventListener('click', function showCap() {
+            spoinkMusic.play();
+            this.style.opacity = 0;
+            const cap = document.getElementById(this.dataset.target);
+            cap.style.opacity = 1;
+        })
+    }))
 
 
 });
+
 

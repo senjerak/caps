@@ -20,7 +20,7 @@ body {
 
 a,
 button {
-    cursor: url('../images/curser2.png'), auto;
+    cursor: url('../images/curser2.png'), auto !important;
 }
 
 main {
@@ -60,8 +60,9 @@ div.logo {
 }
 
 .cap {
+    opacity: 0;
     top: calc(55px + var(--size-offset));
-    transition: left ease 3s;
+    transition: left ease 3s, opacity ease-in 0.5s;
     transform: translateX(-50%);
     bottom: 150px;
     width: 150px;
@@ -71,11 +72,11 @@ div.logo {
 }
 
 .cap.slow {
-    transition: left ease 5s;
+    transition: left ease 5s, opacity ease-in 0.5s;
 }
 
 .cap.fast {
-    transition: left ease 2s;
+    transition: left ease 2s, opacity ease-in 0.5s;
 }
 
 .cap.flip {
@@ -223,6 +224,14 @@ main {
     position: absolute;
 }
 
+.spoinky button {
+    opacity: 0;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: opacity ease-out 1s;
+}
+
 .spoinkbob {
     z-index: 0;
     background-repeat: no-repeat;
@@ -323,12 +332,19 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0 0 0 / 0.5);
+    z-index: 4;
     opacity: 1;
     transition: opacity 1s ease-out;
 }
 
 
-button {
+.overlay button {
     color: #ffffff;
     text-align: center;
     margin: auto;
@@ -340,7 +356,7 @@ button {
     border-style: solid;
 }
 
-button:hover {
+.overlay button:hover {
     filter: drop-shadow(5px 5px 20px #3f2e47);
     transform: scale(110%);
     transition: transform 100ms ease-out;
