@@ -2,8 +2,8 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
     // Code here, DOM is **Definitely** ready for stuff
-    const ding = document.querySelector('#lestart')
 
+    const ding = document.querySelector('#lestart')
     const popUp = document.querySelector('.overlay');
     const buttonClose = document.querySelector('#closeup')
     buttonClose.addEventListener('click', function () {
@@ -12,13 +12,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
         ding.play();
     });
 
-    const cap = document.querySelector('.cap');
+    const caps = document.querySelectorAll('.cap');
     document.addEventListener("mousemove", _.throttle(function mauscap(e) {
-        cap.style.left = e.clientX + "px";
-        const bounds = cap.getBoundingClientRect();
-        const center = (bounds.left + bounds.right) / 2;
-        if (center > e.clientX) cap.classList.add("flip");
-        else cap.classList.remove("flip");
+        caps.forEach(cap => {
+            cap.style.left = e.clientX + "px";
+            const bounds = cap.getBoundingClientRect();
+            const center = (bounds.left + bounds.right) / 2;
+            if (center > e.clientX) cap.classList.add("flip");
+            else cap.classList.remove("flip");
+        })
     }, 1000))
+
+    const spoinkClose = document.querySelector('.spoinkbob');
+
+
 });
 

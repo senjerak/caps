@@ -60,12 +60,20 @@ div.logo {
 }
 
 .cap {
-    transition: left ease 2s;
+    transition: left ease 3s;
     transform: translateX(-50%);
     bottom: 150px;
     width: 150px;
     height: 150px;
     position: absolute;
+}
+
+.cap.slow {
+    transition: left ease 5s;
+}
+
+.cap.fast {
+    transition: left ease 2s;
 }
 
 .cap.flip {
