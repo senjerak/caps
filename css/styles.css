@@ -60,12 +60,14 @@ div.logo {
 }
 
 .cap {
+    top: calc(55px + var(--size-offset));
     transition: left ease 3s;
     transform: translateX(-50%);
     bottom: 150px;
     width: 150px;
     height: 150px;
     position: absolute;
+    display: block;
 }
 
 .cap.slow {
