@@ -151,7 +151,7 @@ div.logo {
 .text {
     padding: 0;
     font-family: firstschool;
-    font-size: small;
+    font-size: medium;
     color: white;
     text-align: center;
     margin: 0 auto;
@@ -179,7 +179,7 @@ main {
 
 .irlimages img {
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 20px;
     display: inline;
     width: 200px;
     height: 200px;
