@@ -366,6 +366,10 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 
+.lemenu{
+    z-index: 5;
+}
+
 /*
  * Made by Erik Terwan
  * 24th of November 2015
@@ -380,7 +384,6 @@ audio::-webkit-media-controls-time-remaining-display {
 
 nav {
     position: fixed;
-    z-index: 5;
 }
 
 
