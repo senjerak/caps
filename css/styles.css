@@ -380,6 +380,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 nav {
     position: fixed;
+    z-index: 3;
 }
 
 
