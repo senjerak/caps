@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     const buttonClose = document.querySelector('#closeup')
     const scene = document.querySelector('#scene')
     const grassScene = scene.querySelector('.grass-scene')
+
+
     buttonClose.addEventListener('click', function () {
         popUp.style.opacity = 0;
         setTimeout(() => popUp.remove(), 1000);

@@ -15,6 +15,11 @@ body {
     flex-direction: column;
 }
 
+.bebies{
+    height: 100px;
+    width: 100px;
+}
+
 @font-face {
     font-family: firstschool;
     src: url(../font/firstschool.ttf);

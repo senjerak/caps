@@ -9,7 +9,8 @@
 
 # Assets
 [] Caps Still
-[] Caps 4 & 5
-[] Caps 5 & 6
+[x] Caps 4 & 5
+[x] Caps 5 & 6
 [] Star Animation
 [] Caps Page  
+[] fullpage ref
