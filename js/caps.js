@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         popUp.style.opacity = 0;
         setTimeout(() => popUp.remove(), 1000);
         ding.volume = 0.5;
-        BGmusic.volume = 0.1;
+        BGmusic.volume = 0.07;
         spoinkMusic.volume = 0.5;
         ding.play();
         setTimeout(() => {
@@ -31,13 +31,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // cap factory
     function makeCap() {
-        const offset = Math.max(0.5, Math.random() * 1.25)
+        const offset = Math.max(0.5, Math.random() * 1.50)
 
         const size = offset * 155
 
         const speed = Math.floor(Math.random() * 8 + 1.5);
 
-        const species = Math.floor(Math.random() * 3 + 1);
+        const species = Math.floor(Math.random() * 9 + 1);
+
+        const lastCap = caps[caps.length - 1]
+        if( lastCap && lastCap.species === species) return makeCap();
+       
 
         const cap = { id: caps.length, species: species, size: size, speed: speed }
 

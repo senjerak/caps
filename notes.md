@@ -8,6 +8,8 @@
 
 
 # Assets
-- Caps Still
-- Caps 4 & 5
-- Star Animation
+[] Caps Still
+[] Caps 4 & 5
+[] Caps 5 & 6
+[] Star Animation
+[] Caps Page  
