@@ -15,11 +15,6 @@ body {
     flex-direction: column;
 }
 
-.bebies{
-    height: 100px;
-    width: 100px;
-}
-
 @font-face {
     font-family: firstschool;
     src: url(../font/firstschool.ttf);
@@ -87,12 +82,44 @@ div.logo {
 }
 
 .dirt-scene {
-    height: 200px;
+    height: 300px;
     width: 100%;
     background-image: url('../images/dirtblock.png');
     background-repeat: repeat-x;
     background-position: top center;
     background-size: contain;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.bebies {
+    display:inline-block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:20px;
+}
+
+.bebies:hover {
+    border: solid rgb(87, 233, 165) 3px;
+    border-radius: 10px;
+    padding: none;
+    margin: none;
+    transform: scale(110%);
+    background-color:rgba(58, 116, 58, 0.3);
+}
+
+.textmush {
+    padding: 10px;
+    font-family: firstschool;
+    font-size: medium;
+    color: white;
+    bottom: 5px;
+    position: absolute;
+    opacity: 0%;
 }
 
 .grass-scene {
@@ -210,12 +237,6 @@ main {
     box-shadow: 1px 1px 2px black, 0 0 25px rgb(147, 147, 255), 0 0 5px rgb(183, 183, 255);
 }
 
-.aboutmush {
-    text-align: center;
-    margin: auto;
-    padding: auto;
-}
-
 .mushibob {
     background-repeat: no-repeat;
     display: inline-block;
@@ -281,21 +302,94 @@ main {
     background-image: url(../images/mush3.gif)
 }
 
-audio::-webkit-media-controls-panel {
-    background-color: rgb(182, 184, 255);
+#bebies1 {
+    background-image: url("../images/walkies1.png");
+    background-size: contain;
 }
 
-audio::-webkit-media-controls-play-button {
-    background-color: rgb(145, 151, 255);
-    border-radius: 50%;
+#bebies1:hover {
+    background-image: url("../images/walkies1.gif");
+    background-size: contain;
 }
 
-audio::-webkit-media-controls-current-time-display {
-    color: #fff;
+#bebies2 {
+    background-image: url("../images/walkies2.png");
+    background-size: contain;
 }
 
-audio::-webkit-media-controls-time-remaining-display {
-    color: #fff;
+#bebies2:hover {
+    background-image: url("../images/walkies2.gif");
+    background-size: contain;
+}
+
+#bebies3 {
+    background-image: url("../images/walkies3.png");
+    background-size: contain;
+}
+
+#bebies3:hover {
+    background-image: url("../images/walkies3.gif");
+    background-size: contain;
+}
+
+#bebies4 {
+    background-image: url("../images/walkies4.png");
+    background-size: contain;
+}
+
+#bebies4:hover {
+    background-image: url("../images/walkies4.gif");
+    background-size: contain;
+}
+
+#bebies5 {
+    background-image: url("../images/walkies5.png");
+    background-size: contain;
+}
+
+#bebies5:hover {
+    background-image: url("../images/walkies5.gif");
+    background-size: contain;
+}
+
+#bebies6 {
+    background-image: url("../images/walkies6.png");
+    background-size: contain;
+}
+
+#bebies6:hover {
+    background-image: url("../images/walkies6.gif");
+    background-size: contain;
+}
+
+#bebies7 {
+    background-image: url("../images/walkies7.png");
+    background-size: contain;
+}
+
+#bebies7:hover {
+    background-image: url("../images/walkies7.gif");
+    background-size: contain;
+}
+
+#bebies8 {
+    background-image: url("../images/walkies8.png");
+    background-size: contain;
+}
+
+#bebies8:hover {
+    background-image: url("../images/walkies8.gif");
+    background-size: contain;
+}
+
+#bebies9 {
+    background-image: url("../images/walkies9.png");
+    background-size: contain;
+}
+
+#bebies9:hover {
+    background-image: url("../images/walkies9.gif");
+    background-size: contain;
 }
 
 #wavcontrol {
@@ -371,7 +465,7 @@ audio::-webkit-media-controls-time-remaining-display {
 }
 
 
-.lemenu{
+.lemenu {
     z-index: 5;
 }
 
