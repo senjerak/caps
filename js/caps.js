@@ -4,15 +4,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Code here, DOM is **Definitely** ready for stuff
 
     // menu close
-    const ding = document.querySelector('#lestart')
-    const BGmusic = document.querySelector('#mainBGmusic')
-    const spoinkMusic = document.querySelector('#bringCap')
+    const ding = document.querySelector('#lestart');
+    const BGmusic = document.querySelector('#mainBGmusic');
+    const spoinkMusic = document.querySelector('#bringCap');
     const spoinkClose = document.querySelectorAll('.spoinkbob button');
     const popUp = document.querySelector('.overlay');
-    const buttonClose = document.querySelector('#closeup')
-    const scene = document.querySelector('#scene')
-    const grassScene = scene.querySelector('.grass-scene')
-
+    const buttonClose = document.querySelector('#closeup');
+    const scene = document.querySelector('#scene');
+    const grassScene = scene.querySelector('.grass-scene');
 
     buttonClose.addEventListener('click', function () {
         popUp.style.opacity = 0;
@@ -42,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         const species = Math.floor(Math.random() * 9 + 1);
 
         const lastCap = caps[caps.length - 1]
-        if( lastCap && lastCap.species === species) return makeCap();
-       
+        if (lastCap && lastCap.species === species) return makeCap();
+
 
         const cap = { id: caps.length, species: species, size: size, speed: speed }
 
@@ -60,18 +59,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
             this.style.pointerEvents = 'none';
 
             const cap = makeCap();
-            
+
             const image = document.createElement('img');
-            image.id=`cap-${cap.id}`
+            image.id = `cap-${cap.id}`
             image.className = 'cap'
             image.src = `./images/walkies${cap.species}.gif`
             image.style.width = `${cap.size}px`
             image.style.height = `${cap.size}px`
             image.style.left = bounds.left + "px";
             console.log('left is ', bounds.left)
-            image.style.setProperty('--speed',`${cap.speed}s`)
+            image.style.setProperty('--speed', `${cap.speed}s`)
             image.style.setProperty('--size-offset', cap.size)
-            
+
             document.addEventListener('mousemove', _.throttle(function mauscap(e) {
                 image.style.left = e.clientX + "px";
                 const bounds = image.getBoundingClientRect();
@@ -79,13 +78,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
                 if (center > e.clientX) image.classList.add("flip");
                 else image.classList.remove("flip");
             }, 250))
-            
-            
+
+
             scene.insertBefore(image, grassScene)
 
             caps.push(cap)
-            caps.sort((a,b) => b.size - a.size)
-            caps.forEach((cap,i) => {
+            caps.sort((a, b) => b.size - a.size)
+            caps.forEach((cap, i) => {
                 document.getElementById(`cap-${cap.id}`).style.zIndex = i
             })
 
