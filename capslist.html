@@ -45,60 +45,48 @@
 
                 <div class="text">
                     <p>⋆ ｡°✩ Caps Stats ✩°｡ ⋆</p>
+                    <p><small>Hover over a Cap!</small></p>
                 </div>
             </div>
         </div>
 
         <div class="mushpopup">
-            <img class="mushipop" id="caps_1" src="/images/caps1.png">
-            <img class="mushipop" id="caps_2" src="/images/caps2.png">
-            <img class="mushipop" id="caps_3" src="/images/caps3.png">
+            <img class="mushipop" src="/images/sparklies.gif">
         </div>
-        <!---
-            <div class="aboutmush">
-                <div class="mushibob" id="mush1"></div>
-                <div class="mushibob" id="mush2"></div>
-                <div class="mushibob" id="mush3"></div>
-            </div>
-            <div class="text">
-                <h2>Toadstool</h2> 
-                <h2>Shiitake</h2>
-                <h2>Parasola</h2>
-            </div>
-        -->
 
         <div id="scene">
 
             <div class="grass-scene"></div>
-            <div class="dirt-scene">
-                <div id="bebies1" class="bebies">
+            <div class="dirt-scene" id="listy">
+                <div id="bebies_1" class="bebies">
                     <h3 class="textmush">bell cap</h3>
                 </div>
-                <div id="bebies2" class="bebies">
+                <div id="bebies_2" class="bebies">
                     <h3 class="textmush">shiitake</h3>
                 </div>
-                <div id="bebies3" class="bebies">
+                <div id="bebies_3" class="bebies">
                     <h3 class="textmush">toadstool</h3>
                 </div>
-                <div id="bebies4" class="bebies">
+                <div id="bebies_4" class="bebies">
                     <h3 class="textmush">parasola</h3>
                 </div>
-                <div id="bebies5" class="bebies">
+                <div id="bebies_5" class="bebies">
                     <h3 class="textmush">cottonball</h3>
                 </div>
-                <div id="bebies6" class="bebies">
+                <div id="bebies_6" class="bebies">
                     <h3 class="textmush">mycenea</h3>
                 </div>
-                <div id="bebies7" class="bebies">
+                <div id="bebies_7" class="bebies">
                     <h3 class="textmush">death cap</h3>
                 </div>
-                <div id="bebies8" class="bebies">
+                <div id="bebies_8" class="bebies">
                     <h3 class="textmush">wavy cap</h3>
                 </div>
-                <div id="bebies9" class="bebies">
+                <div id="bebies_9" class="bebies">
                     <h3 class="textmush">ink cap</h3>
                 </div>
             </div>
+
         </div>
 
     </main>
@@ -106,6 +94,24 @@
     <footer>
         <div class="fooper">☆ Web Dev Class 2022 Gabi Lecusay ☆</div>
     </footer>
+
+    <script>
+        const mushpreview = document.querySelector('.mushpopup img');
+        const mushbuttons = document.querySelector('#listy .bebies');
+        const mushbox = {
+            mushi = undefined
+        };
+        const mushi = ["caps"];
+        function mushidisplay() {
+            for (const mushpreview of mushi) {
+                button.addEventListener('mouseover', (event) => {
+                    mushpreview.src = './images/caps{1,2,3,4,5,6,7,8,9}.png'
+                })
+            }
+        } 
+
+        mushidisplay();
+    </script>
 
 </body>
 

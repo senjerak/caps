@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         const size = offset * 155
 
-        const speed = Math.floor(Math.random() * 8 + 1.5);
+        const speed = Math.floor(Math.random() * 10 + 2);
 
         const species = Math.floor(Math.random() * 9 + 1);
 

@@ -82,7 +82,7 @@ div.logo {
 }
 
 .dirt-scene {
-    height: 300px;
+    height: 250px;
     width: 100%;
     background-image: url('../images/dirtblock.png');
     background-repeat: repeat-x;
@@ -176,6 +176,16 @@ div.logo {
     background-color: rgb(70, 32, 40);
     opacity: 70;
     font-style: italic;
+}
+
+.subtext{
+    padding: 0px;
+    font-family: firstschool;
+    font-size: medium;
+    color: rgb(182, 182, 182);
+    text-align: center;
+    margin: 0 auto;
+    word-wrap: break-inside;  
 }
 
 .text {
@@ -299,7 +309,7 @@ main {
 }
 
 #caps_1 {
-    display: none;
+    border: solid red 2px;
 }
 
 #caps_2 {
@@ -310,92 +320,92 @@ main {
     display: none;
 }
 
-#bebies1 {
+#bebies_1 {
     background-image: url("../images/walkies1.png");
     background-size: contain;
 }
 
-#bebies1:hover {
+#bebies_1:hover {
     background-image: url("../images/walkies1.gif");
     background-size: contain;
 }
 
-#bebies2 {
+#bebies_2 {
     background-image: url("../images/walkies2.png");
     background-size: contain;
 }
 
-#bebies2:hover {
+#bebies_2:hover {
     background-image: url("../images/walkies2.gif");
     background-size: contain;
 }
 
-#bebies3 {
+#bebies_3 {
     background-image: url("../images/walkies3.png");
     background-size: contain;
 }
 
-#bebies3:hover {
+#bebies_3:hover {
     background-image: url("../images/walkies3.gif");
     background-size: contain;
 }
 
-#bebies4 {
+#bebies_4 {
     background-image: url("../images/walkies4.png");
     background-size: contain;
 }
 
-#bebies4:hover {
+#bebies_4:hover {
     background-image: url("../images/walkies4.gif");
     background-size: contain;
 }
 
-#bebies5 {
+#bebies_5 {
     background-image: url("../images/walkies5.png");
     background-size: contain;
 }
 
-#bebies5:hover {
+#bebies_5:hover {
     background-image: url("../images/walkies5.gif");
     background-size: contain;
 }
 
-#bebies6 {
+#bebies_6 {
     background-image: url("../images/walkies6.png");
     background-size: contain;
 }
 
-#bebies6:hover {
+#bebies_6:hover {
     background-image: url("../images/walkies6.gif");
     background-size: contain;
 }
 
-#bebies7 {
+#bebies_7 {
     background-image: url("../images/walkies7.png");
     background-size: contain;
 }
 
-#bebies7:hover {
+#bebies_7:hover {
     background-image: url("../images/walkies7.gif");
     background-size: contain;
 }
 
-#bebies8 {
+#bebies_8 {
     background-image: url("../images/walkies8.png");
     background-size: contain;
 }
 
-#bebies8:hover {
+#bebies_8:hover {
     background-image: url("../images/walkies8.gif");
     background-size: contain;
 }
 
-#bebies9 {
+#bebies_9 {
     background-image: url("../images/walkies9.png");
     background-size: contain;
 }
 
-#bebies9:hover {
+#bebies_9:hover {
     background-image: url("../images/walkies9.gif");
     background-size: contain;
 }
