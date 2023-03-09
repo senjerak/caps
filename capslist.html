@@ -58,31 +58,31 @@
 
             <div class="grass-scene"></div>
             <div class="dirt-scene" id="listy">
-                <div id="bebies_1" class="bebies">
+                <div id="bebies_1" class="bebies" data-bebi="1">
                     <h3 class="textmush">bell cap</h3>
                 </div>
-                <div id="bebies_2" class="bebies">
+                <div id="bebies_2" class="bebies" data-bebi="2">
                     <h3 class="textmush">shiitake</h3>
                 </div>
-                <div id="bebies_3" class="bebies">
+                <div id="bebies_3" class="bebies" data-bebi="3">
                     <h3 class="textmush">toadstool</h3>
                 </div>
-                <div id="bebies_4" class="bebies">
+                <div id="bebies_4" class="bebies" data-bebi="4">
                     <h3 class="textmush">parasola</h3>
                 </div>
-                <div id="bebies_5" class="bebies">
+                <div id="bebies_5" class="bebies" data-bebi="5">
                     <h3 class="textmush">cottonball</h3>
                 </div>
-                <div id="bebies_6" class="bebies">
+                <div id="bebies_6" class="bebies" data-bebi="6">
                     <h3 class="textmush">mycenea</h3>
                 </div>
-                <div id="bebies_7" class="bebies">
+                <div id="bebies_7" class="bebies" data-bebi="7">
                     <h3 class="textmush">death cap</h3>
                 </div>
-                <div id="bebies_8" class="bebies">
+                <div id="bebies_8" class="bebies" data-bebi="8">
                     <h3 class="textmush">wavy cap</h3>
                 </div>
-                <div id="bebies_9" class="bebies">
+                <div id="bebies_9" class="bebies" data-bebi="9">
                     <h3 class="textmush">ink cap</h3>
                 </div>
             </div>
@@ -96,16 +96,15 @@
     </footer>
 
     <script>
+
         const mushpreview = document.querySelector('.mushpopup img');
-        const mushbuttons = document.querySelector('#listy .bebies');
-        const mushbox = {
-            mushi = undefined
-        };
+        const mushbuttons = document.querySelectorAll('#listy .bebies');
         const mushi = ["caps"];
         function mushidisplay() {
-            for (const mushpreview of mushi) {
+            for (const button of mushbuttons) {
                 button.addEventListener('mouseover', (event) => {
-                    mushpreview.src = './images/caps{1,2,3,4,5,6,7,8,9}.png'
+                    const bebi = event.currentTarget.dataset.bebi
+                    mushpreview.src = `./images/caps_${bebi}.png`
                 })
             }
         } 
